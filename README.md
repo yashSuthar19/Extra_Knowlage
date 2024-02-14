@@ -42,8 +42,48 @@ js Engine keep track of function call in program
  Last In,First Out (LIFO) data structure
 call Stack Image URL - https://media.geeksforgeeks.org/wp-content/uploads/20201213103357/global.png
 
+**NPM AND NPX**
+npm - node packeg mangaer 
+npx - node packege executer
 
+**Async/Await**
+Async/Await is a special syntax to work with promises in a more comfortable fashion. It’s easy to understand and use. Adding the keyword async before a function ensures that the function returns a promise and the keyword await makes JavaScript wait until that promise settles and returns the result.
 
+**git Switch -c <branchname>**
+tranfer commite one branch to another branch 
+
+**process.nextTick() setImmediate() setTimeout()**
+A function passed to process.nextTick() is always call event loop end after start new event loop befor they call first allways after event lopp execute
+
+**This means it will always execute before setTimeout and setImmediate**.
+
+A **process.nextTick**  callback is added to     **process.nextTick queue**.
+A **Promise.then()**   callback is added to promises     **microtask queue**.
+
+A **setTimeout**, **setImmediate**     callback is added to     **macrotask queue**        **setTimeout** - Timer Queue      **setImmediate** - check handeler/ queue.
+
+**Path Module**
+import path from "path";  //// import path mode here 
+
+console.log(path.dirname("E:/Yanish/2024/2024-Socket.IO"));
+console.log(path.extname("E:/Yanish/2024/2024-Socket.IO"));
+console.log(path.basename("E:/Yanish/2024/2024-Socket.IO"));
+console.log(path.parse("E:/Yanish/2024/2024-Socket.IO"));
+
+///**Out Put**
+E:/Yanish/2024 
+.IO
+2024-Socket.IO
+{
+  root: 'E:/',
+  dir: 'E:/Yanish/2024',
+  base: '2024-Socket.IO',
+  ext: '.IO',
+  name: '2024-Socket'
+}
+
+**fs Module**
+file System 
 
 
 
