@@ -85,6 +85,16 @@ E:/Yanish/2024
 **fs Module**
 file System 
 
+**Forget PassWord**
+
+function generatePassword(length) {
+  var chars = "0123456789abcdefghijklmnopqrstuvwxyz#$%^&@";
+  var result = "";
+  for (var i = length; i > 0; --i)
+    result += chars[Math.floor(Math.random() * chars.length)];
+  return result;
+}
+
 
 
 
